@@ -3,7 +3,7 @@
 {% block content %}
   <h1>Title: {{ student.st_name }}</h1>
 
-  <p><strong>Teacher:</strong> <a href="">{{ student.teacher }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Teacher:</strong> <a href="{% url 'teacher-detail' student.teacher.pk %}">{{ student.teacher }}</a> 
   <p><strong>GPA:</strong> {{ student.GPA }}</p>
   <p><strong>IIN:</strong> {{ student.iin }}</p> 
   <p><strong>Language:</strong> {{ student.language }}</p>  

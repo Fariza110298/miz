@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Teacher: {{ teacher.last_name }} {{ teacher.first_name }}</h1>
+
+  <p><strong>Students:</strong> <a href="http://localhost:8000/catalog/students">Student_list</a></p>
+  <p><strong>last_name:</strong> {{ teacher.last_name }}</p>
+  <p><strong>firs_name:</strong> {{ teacher.first_name }}</p> 
+  <div style="margin-left:20px;margin-top:20px">
+  <p><strong>date_of_birth:</strong> {{ teacher.date_of_birth }}</p>  
+  <p><strong>date_hire:</strong> {{ teacher.date_hire }}</p>  
+
+  
+
+  </div>
+{% endblock %}

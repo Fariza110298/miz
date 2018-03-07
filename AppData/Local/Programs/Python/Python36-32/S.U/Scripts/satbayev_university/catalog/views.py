@@ -24,5 +24,13 @@ from django.views import generic
 
 class StudentListView(generic.ListView):
     model = Student
+    paginate_by = 2
 class StudentDetailView(generic.DetailView):
     model = Student
+from django.views import generic
+
+class TeacherListView(generic.ListView):
+    model = Teacher
+    paginate_by = 2
+class TeacherDetailView(generic.DetailView):
+    model = Teacher
