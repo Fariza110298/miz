@@ -20,3 +20,9 @@ def index(request):
         'index.html',
         context={'num_students':num_students,'num_informations':num_informations,'num_informations_available':num_informations_available,'num_teachers':num_teachers},
     )
+from django.views import generic
+
+class StudentListView(generic.ListView):
+    model = Student
+class StudentDetailView(generic.DetailView):
+    model = Student
